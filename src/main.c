@@ -2,12 +2,12 @@
 
 int main(void)
 {
-	char ch;
+	FILE *file;
+	file = fopen("LICENSE", "r");
 
-	ch = getchar();
-	while (ch != EOF) {
-		putchar(ch);
-		ch = getchar();
+	int read;
+	while ((read = getc(file)) != EOF) {
+		fputc(read, stdout);
 	}
 
 	puts("\n The End ...\n");
