@@ -1,22 +1,25 @@
 #include <stdio.h>
 
-#define Z (32.0)
-#define W (5.0 / 9.0)
-#define CELSIUS(f) (W * (f - Z))
+void print_char(char ch);
 
-#define LOWER (0.0)
-#define UPPER (300.0)
-#define STEP (20.0)
-
-/* C = (5/9) * (F - 32) */
-/* Print Fahrenheit-Celsius table */
 int main(void)
 {
-	printf(" -> Fahrenheit\tCelsius\n");
-	for (double fahrenheit = LOWER; fahrenheit <= UPPER;
-	     fahrenheit = fahrenheit + STEP) {
-		printf(" -> %7.2lf\t%7.2lf\n", fahrenheit, CELSIUS(fahrenheit));
+	printf("You can enter 20 characters at last:\n -> ");
+
+	char ch;
+	for (int i = 0; i < 20; ++i) {
+		ch = getchar();
+		print_char(ch);
 	}
+	putchar('\n');
 
 	return 0;
+}
+
+void print_char(char ch)
+{
+	if (ch == '\r' || ch == '\n' || ch == '\n')
+		return;
+	putchar(ch);
+	putchar('-');
 }
