@@ -1,2 +1,3 @@
-# clang_basic
-Learning Basic C Programming Langauge
+# clang_learning_c
+
+Learning C Programming Language
