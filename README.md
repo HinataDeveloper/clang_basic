@@ -1,3 +1,5 @@
-# clang_learning_c
+# Learning C Language Programming in Basic Layer.
 
-Learning C Programming Language
+## You can see all my practice in snapshots folder
+
+### Learning C Programming Language
