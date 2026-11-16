@@ -2,4 +2,3 @@
 
 ## You can see all my practice in snapshots folder
 
-### Learning C Programming Language
