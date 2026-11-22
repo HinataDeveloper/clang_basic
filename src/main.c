@@ -2,19 +2,10 @@
 
 int main(void)
 {
-	FILE *file;
-	file = fopen("LICENSE1", "r");
-	if (file == NULL) {
-		perror("--->>> file not found \n");
-		return -1;
-	}
+	printf("enter a character: ");
+	char ch = getchar();
 
-	int read;
-	while ((read = getc(file)) != EOF) {
-		fputc(read, stdout);
-	}
-
-	fclose(file);
+	putchar(ch);
 
 	puts("\n The End ...\n");
 	return 0;
